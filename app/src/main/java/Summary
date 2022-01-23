@@ -1,0 +1,41 @@
+MVVM hota hai model view viewmodel layer
+clean arch me ek aur layer hota hai use cases
+jb apna project ka size bdhta chla jata hai  viewmodel ka size bdhta chla jata hai us load ko kam krne k lite
+usecases use krte hai
+
+
+let say user profile  ka feature dena hai
+esme do screen hoga editprofile aur viewprofile
+ab jo action perform kr skte hai in do screen k liye wo apna use cases hoga
+jaisa ki
+getUserProfileDate(),updateUserProfilePic(),
+
+use cases k fyda hai ki reusable hai  esko alg alg viewmodel me use kr skte hai
+lets say getUserProfileDate() ki jrurt hai alg alg viewmodel me to use kr skte hai
+
+
+Presentation layer -> use hota hai ui k liye
+view,xml,viewmodel,composable,
+
+Domain layer  -> it contains models
+Entity that contain data, repository interfaces,bussiness logic(use cases)
+
+Data Layer-> it contains data
+Database,api interface,Repository implementation
+
+dto -> data transfer object ye object hota hai jo api return krta hai
+
+
+repository package do jgh es liye hai ki
+domain layer me bs define hoga
+data layer me repository implementtion hoga
+ye testcases k liye bht helpful hota hai
+
+
+
+Use case -> should only have one public function
+humne invoke function ko override kiya hai taki  use cases ko as a function use kr ske
+
+
+
+
